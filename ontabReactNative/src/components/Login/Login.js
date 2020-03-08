@@ -19,6 +19,9 @@ export default class Login extends Component {
                             style={styles.logo}
                             source = {logoImage}
                         />
+                        <Text style={styles.title}>
+                            Login to OnTab below!
+                        </Text>
                     </View>
                     <View style={styles.formContainer}>
 
@@ -53,5 +56,13 @@ const styles = StyleSheet.create({
     logo: {
         width: 100,
         height: 100
+    },
+
+    title: {
+        color: '#FFF',
+        marginTop: 10,
+        width: 160,
+        textAlign: 'center',
+        opacity: 0.9
     }
 })
