@@ -6,6 +6,7 @@ import {
     StyleSheet,
     View
 } from 'react-native';
+import LoginForm from './LoginForm';
 import bgImage from '../../../assets/images/app_background.jpg';
 import logoImage from '../../../assets/images/react_logo.png'
 
