@@ -7,13 +7,22 @@ import {
     View
 } from 'react-native';
 import bgImage from '../../../assets/images/app_background.jpg';
+import logoImage from '../../../assets/images/react_logo.png'
 
 export default class Login extends Component {
     render() {
         return (
             <View style = { styles.container }>
                 <ImageBackground style = { styles.backgroundImage } source = {bgImage}>
+                    <View style={ styles.logoContainer } source = {logoImage}>
+                        <Image
+                            style={styles.logo}
+                            source = {logoImage}
+                        />
+                    </View>
+                    <View style={styles.formContainer}>
 
+                    </View>
                 </ImageBackground>
             </View>
         )
@@ -33,5 +42,16 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         opacity: 0.7
+    },
+
+    logoContainer: {
+        alignItems: 'center',
+        flexGrow: 1,
+        justifyContent: 'center'
+    },
+
+    logo: {
+        width: 100,
+        height: 100
     }
 })
