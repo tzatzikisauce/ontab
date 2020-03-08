@@ -4,7 +4,8 @@ import {
     ImageBackground,
     Text,
     StyleSheet,
-    View
+    View,
+    KeyboardAvoidingView
 } from 'react-native';
 import LoginForm from './LoginForm';
 import bgImage from '../../../assets/images/app_background.jpg';
@@ -13,7 +14,7 @@ import logoImage from '../../../assets/images/react_logo.png'
 export default class Login extends Component {
     render() {
         return (
-            <View style = { styles.container }>
+            <KeyboardAvoidingView behavior="padding" style = { styles.container }>
                 <ImageBackground style = { styles.backgroundImage } source = {bgImage}>
                     <View style={ styles.logoContainer } source = {logoImage}>
                         <Image
@@ -25,10 +26,10 @@ export default class Login extends Component {
                         </Text>
                     </View>
                     <View style={styles.formContainer}>
-
+                        <LoginForm/>
                     </View>
                 </ImageBackground>
-            </View>
+            </KeyboardAvoidingView>
         )
     }
 }
