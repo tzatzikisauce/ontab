@@ -5,6 +5,7 @@ import ComponentsScreen from './src/screens/ComponentScreen';
 import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/ImageScreen';
 import Login from './src/components/Login/Login';
+import Menu from './src/components/Menu/Menu';
 
 
 const navigator = createStackNavigator(
@@ -13,12 +14,13 @@ const navigator = createStackNavigator(
     Components: ComponentsScreen,
     List: ListScreen,
     Image: ImageScreen,
-    Login: Login
+    Login: Login,
+    Menu: Menu,
   },
   {
     initialRouteName: 'Home',
     defaultNavigationOptions: {
-      title: 'App'
+      title: 'OnTab'
     }
   }
 );
