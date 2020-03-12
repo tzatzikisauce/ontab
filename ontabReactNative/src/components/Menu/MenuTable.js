@@ -23,9 +23,9 @@ export default class LoginForm extends Component {
             ["Moscow Mule", '$7',''],
             ["Mojito", '$6.50',''],
             ["Whiskey Sour", '$6.50',''],
-            ["Manhattan", '$6.50',''],
-            ["Mimosa", '$6.50',''],
-            ["Gimlet", '$6.50',''],
+            ["Manhattan", '$6',''],
+            ["Mimosa", '$7',''],
+            ["Gimlet", '$7.50',''],
           ]
         }
       }
