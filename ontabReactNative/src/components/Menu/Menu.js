@@ -8,14 +8,12 @@ import {
     KeyboardAvoidingView
 } from 'react-native';
 import MenuTable from './MenuTable';
-import bgImage from '../../../assets/images/app_background.jpg';
-import logoImage from '../../../assets/images/react_logo.png'
 
 export default class Menu extends Component {
     render() {
         return (
             <KeyboardAvoidingView behavior="padding" style = { styles.container }>
-                <ImageBackground style = { styles.backgroundImage } source = {bgImage}>
+                <View style = { styles.backgroundImage } >
                     <View style={ styles.logoContainer }>
                         <Text style={styles.title}>
                             Menu
@@ -24,7 +22,7 @@ export default class Menu extends Component {
                     <View style={styles.menuContainer}>
                         <MenuTable/>
                     </View>
-                </ImageBackground>
+                </View>
             </KeyboardAvoidingView>
         )
     }
@@ -33,7 +31,7 @@ export default class Menu extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#3238db'
+        backgroundColor: '#1c1a26',
     },
 
     backgroundImage: {
@@ -42,7 +40,7 @@ const styles = StyleSheet.create({
         height: '100%',
         justifyContent: "center",
         alignItems: "center",
-        opacity: 0.7
+        // opacity: 0.7
     },
 
     logoContainer: {
@@ -51,9 +49,7 @@ const styles = StyleSheet.create({
     },
 
     menuContainer: {
-        // alignItems: 'flex-start',
         flexGrow: 1,
-        // justifyContent: 'center'
     },
 
     title: {
