@@ -42,6 +42,7 @@ export default class PaymentFormView extends React.Component {
       </View>
     );
   }
+}
 
 
 const styles = StyleSheet.create({

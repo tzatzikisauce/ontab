@@ -22,6 +22,10 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate('Login')}
       ></Button>
       <Button
+        title='Go to Payment'
+        onPress={() => navigation.navigate('AddSubscriptionView')}
+      ></Button>
+      <Button
         title='Go to Menu'
         onPress={() => navigation.navigate('Menu')}
       ></Button>
