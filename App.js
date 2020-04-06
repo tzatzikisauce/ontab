@@ -6,6 +6,7 @@ import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/ImageScreen';
 import Login from './src/components/Login/Login';
 import Menu from './src/components/Menu/Menu';
+import Tab from './src/components/Tab/Tab';
 import AddSubscriptionView from './src/components/Payment/AddSubscriptionView'
 
 
@@ -17,6 +18,7 @@ const navigator = createStackNavigator(
     Image: ImageScreen,
     Login: Login,
     Menu: Menu,
+    Tab: Tab,
     AddSubscriptionView: AddSubscriptionView
   },
   {
