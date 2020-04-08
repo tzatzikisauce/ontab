@@ -1,9 +1,3 @@
-# ontabReact
-npm install
-
-npm start
-
-# ontabReactNative
 Android Studio Simulator
 
 Install Android Studio: https://developer.android.com/studio
