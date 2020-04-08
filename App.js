@@ -9,6 +9,7 @@ import Menu from './src/components/Menu/Menu';
 import AddSubscriptionView from './src/components/Payment/AddSubscriptionView'
 
 
+
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,

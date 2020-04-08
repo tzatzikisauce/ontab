@@ -14,19 +14,10 @@ export default class AddSubscriptionView extends Component {
         <ScrollView style={styles.container} ref={ref => (this.scrollViewRef = ref)}>
           <View style={styles.textWrapper}>
             <Text style={styles.infoText}>
-              Try out full Stripe payment functionality in a React Native app
+              Payment
             </Text>
           </View>
-          <View style={styles.textWrapper}>
-            <Text style={styles.infoText}>
-              Subscribe to see the magic number!
-            </Text>
-          </View>
-          <View style={styles.textWrapper}>
-            <Text style={styles.infoText}>
-              Subscription Plan: $10/month
-            </Text>
-          </View>
+          
           <View style={styles.cardFormWrapper}>
             <PaymentFormView {...this.props}/>
           </View>
