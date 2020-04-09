@@ -2,8 +2,8 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 14784,
-  "expoServerNgrokUrl": "https://yz-tda.anonymous.ontab.exp.direct",
-  "packagerNgrokUrl": "https://packager.yz-tda.anonymous.ontab.exp.direct",
-  "ngrokPid": 11524
+  "packagerPid": 21244,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }
