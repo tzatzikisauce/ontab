@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, Alert, View, Button } from 'react-native';
 import { CreditCardInput } from 'react-native-credit-card-input';
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -12,7 +12,10 @@ export default class PaymentFormView extends React.Component {
     super(props);
     this.state = { cardData: { valid: false } };
   }
-
+  _alertIndex() {
+    Alert.alert(`Customer Card Added.`);
+  }
+//onPress={() => onSubmit(this.state.cardData)}
   render() {
     const { onSubmit, submitted, error } = this.props;
 
@@ -25,7 +28,8 @@ export default class PaymentFormView extends React.Component {
           <Button
             title='Subscribe'
             disabled={!this.state.cardData.valid || submitted}
-            onPress={() => onSubmit(this.state.cardData)}
+            
+            onPress={() => this._alertIndex()}
           />
           {/* Show errors */}
           {error && (

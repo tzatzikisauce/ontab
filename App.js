@@ -11,6 +11,7 @@ import AddItem from './src/screens/AddItem';
 import List from './src/screens/List';
 import AddSubscriptionView from './src/components/Payment/AddSubscriptionView';
 
+
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
