@@ -7,8 +7,9 @@ import ImageScreen from './src/screens/ImageScreen';
 import Login from './src/components/Login/Login';
 import Menu from './src/components/Menu/Menu';
 import Tab from './src/components/Tab/Tab';
-import AddSubscriptionView from './src/components/Payment/AddSubscriptionView'
-
+import AddItem from './src/screens/AddItem';
+import List from './src/screens/List';
+import AddSubscriptionView from './src/components/Payment/AddSubscriptionView';
 
 const navigator = createStackNavigator(
   {
@@ -19,13 +20,15 @@ const navigator = createStackNavigator(
     Login: Login,
     Menu: Menu,
     Tab: Tab,
-    AddSubscriptionView: AddSubscriptionView
+    AddSubscriptionView: AddSubscriptionView,
+    AddItem: AddItem,
+    List: List,
   },
   {
     initialRouteName: 'Home',
     defaultNavigationOptions: {
-      title: 'OnTab'
-    }
+      title: 'OnTab',
+    },
   }
 );
 
