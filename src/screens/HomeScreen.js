@@ -24,6 +24,13 @@ const HomeScreen = ({ navigation }) => {
             <Text style={styles.btnText}>TAB</Text>
           </View>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('AddSubscriptionView')}
+        >
+          <View style={styles.btn}>
+            <Text style={styles.btnText}>PAYMENT</Text>
+          </View>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('AddItem')}>
           <View style={styles.btn}>
             <Text style={styles.btnText}>add item </Text>
