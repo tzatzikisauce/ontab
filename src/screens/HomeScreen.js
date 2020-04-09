@@ -33,12 +33,12 @@ const HomeScreen = ({ navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('AddItem')}>
           <View style={styles.btn}>
-            <Text style={styles.btnText}>add item </Text>
+            <Text style={styles.btnText}>ADD ITEM </Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('List')}>
           <View style={styles.btn}>
-            <Text style={styles.btnText}>items </Text>
+            <Text style={styles.btnText}>ITEMS </Text>
           </View>
         </TouchableOpacity>
       </View>

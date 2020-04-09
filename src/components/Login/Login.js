@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import LoginForm from './LoginForm';
 import bgImage from '../../../assets/images/app_background.jpg';
-import logoImage from '../../../assets/images/react_logo.png'
+import logoImage from '../../../assets/images/OnTabLogoCropped.png'
 
 export default class Login extends Component {
     render() {
