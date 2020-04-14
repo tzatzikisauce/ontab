@@ -8,6 +8,7 @@ import Login from './src/components/Login/Login';
 import Menu from './src/components/Menu/Menu';
 import Tab from './src/components/Tab/Tab';
 import AddItem from './src/screens/AddItem';
+import AddToMenu from './src/screens/AddToMenu';
 import List from './src/screens/List';
 import AddSubscriptionView from './src/components/Payment/AddSubscriptionView';
 
@@ -23,6 +24,7 @@ const navigator = createStackNavigator(
     Tab: Tab,
     AddSubscriptionView: AddSubscriptionView,
     AddItem: AddItem,
+    AddToMenu: AddToMenu,
     List: List,
   },
   {
