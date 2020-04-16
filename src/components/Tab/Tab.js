@@ -51,7 +51,7 @@ export default class Tab extends Component {
             <KeyboardAvoidingView behavior="padding" style = { styles.container }>
                 <View style={ styles.titleContainer }>
                     <Text style={styles.title}>
-                        Current Tab 
+                        Tab: Ric Han
                     </Text>
                 </View>
                 <View style={styles.menuContainer}>
@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
   
     titleContainer: {
         padding: 20,
+        
         alignItems: 'flex-start',
         justifyContent: 'center'
     },
@@ -111,7 +112,6 @@ const styles = StyleSheet.create({
     title: {
         color: '#FFF',
         marginTop: 10,
-        width: 160,
         textAlign: 'center',
         fontSize: 30,
     },
