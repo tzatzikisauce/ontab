@@ -8,22 +8,14 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.title}>Home</Text>
       </View>
       <View style={styles.menuContainer}>
-        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-          <View style={styles.btn}>
-            <Text style={styles.btnText}>LOGIN</Text>
-          </View>
-        </TouchableOpacity>
+        
 
         <TouchableOpacity onPress={() => navigation.navigate('Menu')}>
           <View style={styles.btn}>
             <Text style={styles.btnText}>BAR MENU</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Tab')}>
-          <View style={styles.btn}>
-            <Text style={styles.btnText}>TAB</Text>
-          </View>
-        </TouchableOpacity>
+        
         <TouchableOpacity
           onPress={() => navigation.navigate('AddSubscriptionView')}
         >
@@ -31,9 +23,14 @@ const HomeScreen = ({ navigation }) => {
             <Text style={styles.btnText}>PAYMENT</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('AddItem')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Customer')}>
           <View style={styles.btn}>
-            <Text style={styles.btnText}>ADD ITEM </Text>
+            <Text style={styles.btnText}>VIEW CUSTOMERS</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('AddToMenu')}>
+          <View style={styles.btn}>
+            <Text style={styles.btnText}>ADD MENU ITEM </Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('List')}>

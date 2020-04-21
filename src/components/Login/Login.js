@@ -8,7 +8,7 @@ import {
     KeyboardAvoidingView
 } from 'react-native';
 import LoginForm from './LoginForm';
-import bgImage from '../../../assets/images/app_background.jpg';
+import bgImage from '../../../assets/images/dark_background.jpg';
 import logoImage from '../../../assets/images/OnTabLogoCropped.png'
 
 export default class Login extends Component {

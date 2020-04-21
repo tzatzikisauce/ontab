@@ -7,24 +7,62 @@ import {
     Alert,
     KeyboardAvoidingView
 } from 'react-native';
+import MenuComponent from '../MenuComponent';
+
+import { db } from './../../../config';
+
+let menuRef = db.ref('/menu');
 
 export default class Tab extends Component {
 
-_closeTab = () => {
-    Alert.alert(`Your current tab has been closed.`);
-} 
+    state = {
+        names: [],
+    }
+
+    componentDidMount() {
+        menuRef.on('value', (snapshot) => {
+          let data = snapshot.val();
+          let names = Object.values(data);
+          this.setState({ names });
+        });
+      }
+
+    closeTab = () => {
+        Alert.alert(`Your current tab has been closed.`);
+    } 
+
+    handleChange = (e) => {
+        this.setState({
+          name: e.nativeEvent.text,
+        });
+      };
+      handleSubmit = () => {
+        addItem(this.state.names);
+        Alert.alert(
+          'Item Added',
+          'Bravo',
+          [{ text: 'OK', onPress: () => console.log('OK Pressed') }],
+          { cancelable: false }
+        );
+      };
 
     render() {
         return (
             <KeyboardAvoidingView behavior="padding" style = { styles.container }>
                 <View style={ styles.titleContainer }>
                     <Text style={styles.title}>
-                        Tab
+                        Tab: Ric Han
                     </Text>
                 </View>
                 <View style={styles.menuContainer}>
-                    
-                    <TouchableOpacity onPress={() => this._closeTab()}>
+                    <View style={styles.row}>
+                        {this.state.names.length > 0 ? (
+                        <MenuComponent items={this.state.names} />
+                        ) : (
+                        <Text style={styles.text}>No items</Text>
+                        )}
+                    </View>
+                    <TouchableOpacity onPress={() => this.closeTab()}>
                         <View style={styles.btn}>
                             <Text style={styles.btnText}>CLOSE TAB</Text>
                         </View>
@@ -45,26 +83,35 @@ const styles = StyleSheet.create({
       alignItems: "center",
   },
     text: {
-      fontSize: 30
+      fontSize: 18,
+      padding: 20,
+      color: 'white',
     },
   
     titleContainer: {
         padding: 20,
-        alignItems: 'center',
+        
+        alignItems: 'flex-start',
         justifyContent: 'center'
     },
   
     menuContainer: {
-        flexGrow: 1,
+        // flexGrow: 1,
         width: '100%',
+        height: '50%',
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    row: { 
+        flexDirection: 'row', 
+        height: 100, 
+        flexGrow: 1,
+        // padding: 20,
     },
   
     title: {
         color: '#FFF',
         marginTop: 10,
-        width: 160,
         textAlign: 'center',
         fontSize: 30,
     },
