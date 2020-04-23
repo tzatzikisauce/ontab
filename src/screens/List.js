@@ -4,7 +4,7 @@ import ItemComponent from '../components/ItemComponent';
 
 import { db } from './../../config';
 
-let itemsRef = db.ref('/items');
+let itemsRef = db.ref('/menu');
 
 export default class List extends Component {
   state = {
