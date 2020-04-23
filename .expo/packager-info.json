@@ -1,19 +1,6 @@
 {
   "devToolsPort": 19002,
-<<<<<<< HEAD
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 13736,
-  "expoServerNgrokUrl": "https://yz-tda.anonymous.ontab.exp.direct",
-  "packagerNgrokUrl": "https://packager.yz-tda.anonymous.ontab.exp.direct",
-  "ngrokPid": 18796
-=======
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
-  "webpackServerPort": null
->>>>>>> 825882011ccbcf49e660372ac0b0d1cf42e0bd9b
+  "packagerPid": 9484
 }
