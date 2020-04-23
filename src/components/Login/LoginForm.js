@@ -6,13 +6,17 @@ import {
     StyleSheet,
     View,
     TextInput,
+    Button,
     TouchableOpacity
 } from 'react-native';
 
+import { withNavigation } from 'react-navigation';
 
-export default class LoginForm extends Component {
+class LoginForm extends Component{
+    
     render() {
         return (
+
             <View style={styles.container}>
                 <TextInput
                     placeholder = "username or email"
@@ -34,9 +38,13 @@ export default class LoginForm extends Component {
                     ref = {(input) => this.passwordInput = input}
                 />
 
-                <TouchableOpacity style={styles.buttonContainer}>
-                    <Text style={styles.buttonText}>LOGIN</Text>
-                </TouchableOpacity>
+
+                <Button
+                  title="Login"
+                  onPress={() =>
+                    this.props.navigation.navigate('Home')
+                  }
+                />
             </View>
         )
     }
@@ -68,3 +76,8 @@ const styles = StyleSheet.create({
         fontWeight: '700',
     }
 })
+
+
+export default withNavigation(LoginForm);
+
+
