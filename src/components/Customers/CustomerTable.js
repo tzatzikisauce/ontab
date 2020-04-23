@@ -15,13 +15,13 @@ class CustomerForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          tableHead: ['Drink', 'Price',''],
+          tableHead: ['Name', 'Tab Total',''],
           tableData: [
             ["Ric Han", '$18.25',''],
             ["Izzy Miles", '$12.50',''],
             ["Maura Winstanley", '$11.30',''],
             ["Eleanor Hightower", '$139.20',''],
-            ["Mike Nicolau", '$18.95',''],
+            ["Mike Nicolaou", '$18.95',''],
             ["Ian Matheson", '$7.20',''],
             ["Josh Abdullah", '$10.50',''],
             ["Chad Lewis", '$6.50',''],
@@ -34,12 +34,15 @@ class CustomerForm extends Component {
     render() {
         const state = this.state;
         const element = (data, index) => (
+            <View style={styles.btn}>
             <Button
                   title="Close Tab"
+                  
                   onPress={() =>
                     this.props.navigation.navigate('Tab')
                   }
                 />
+            </View>
         );
         
         return (
