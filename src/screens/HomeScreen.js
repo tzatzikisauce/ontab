@@ -5,7 +5,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.menuContainer}>
-        <TouchableOpacity onPress={() => navigation.navigate('Menu')}>
+        <TouchableOpacity onPress={() => navigation.navigate('MenuNoButton')}>
           <View style={styles.btn}>
             <Text style={styles.btnText}>BAR MENU</Text>
           </View>
