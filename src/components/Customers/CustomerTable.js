@@ -17,7 +17,7 @@ class CustomerForm extends Component {
         this.state = {
           tableHead: ['Name', 'Tab Total',''],
           tableData: [
-            ["Ric Han", '$18.25',''],
+            ["Rick Han", '$18.25',''],
             ["Izzy Miles", '$12.50',''],
             ["Maura Winstanley", '$11.30',''],
             ["Eleanor Hightower", '$139.20',''],
@@ -36,8 +36,7 @@ class CustomerForm extends Component {
         const element = (data, index) => (
             <View style={styles.btn}>
             <Button
-                  title="Close Tab"
-                  
+                  title="View Tab"
                   onPress={() =>
                     this.props.navigation.navigate('Tab')
                   }

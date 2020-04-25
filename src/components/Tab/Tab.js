@@ -8,6 +8,8 @@ import {
     KeyboardAvoidingView
 } from 'react-native';
 import { Table, TableWrapper, Row, Cell } from 'react-native-table-component';
+import { withNavigation } from 'react-navigation';
+
 
 import MenuComponent from '../MenuComponent';
 
@@ -44,15 +46,10 @@ export default class Tab extends Component {
       let prices = [];
       let tableData = [];
       items.forEach((item) => {
-        prices.push(item.price);
+        prices.push(parseFloat(item.price.substring(1)));
         tableData.push([item.name,item.price]);
       })
-      //TODO: priceSum is not working
-      // Alert.alert(parseFloat(prices[0].substring(1)));
-      // Alert.alert(parseFloat(prices[0].substring(1)));
-      // const arrSum = arr => arr.reduce((a,b) => a + b, 0)
-      let priceSum = prices => prices.reduce((a,b) => parseFloat(a.substring(1)) + parseFloat(b.substring(1)), 0);
-      Alert.alert("" + priceSum);
+      const priceSum = prices.reduce((a,b) => a + b, 0);
       this.setState({ 
         items,
         prices,
@@ -64,6 +61,7 @@ export default class Tab extends Component {
 
     closeTab = () => {
         Alert.alert(`The current tab has been closed.`);
+        this.props.navigation.navigate('Home');
     } 
 
     render() {
