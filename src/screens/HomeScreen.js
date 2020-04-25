@@ -28,16 +28,6 @@ const HomeScreen = ({ navigation }) => {
             <Text style={styles.btnText}>VIEW CUSTOMERS</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('AddToMenu')}>
-          <View style={styles.btn}>
-            <Text style={styles.btnText}>ADD MENU ITEM </Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('List')}>
-          <View style={styles.btn}>
-            <Text style={styles.btnText}>ITEMS </Text>
-          </View>
-        </TouchableOpacity>
       </View>
     </View>
   );
