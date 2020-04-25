@@ -31,6 +31,7 @@ export default class AddToMenu extends Component {
       price: p,
     });
   };
+  
   handleSubmit = () => {
 
     addItem(this.state.name,this.state.price);

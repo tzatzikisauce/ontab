@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity,Alert } from 'react-native';
 import PropTypes from 'prop-types';
 
 export default class MenuComponent extends Component {
@@ -9,6 +9,13 @@ export default class MenuComponent extends Component {
 
   render() {
     return (
+    <View>
+        <TouchableOpacity onPress={() => this.makeLists()}>
+            <View style={styles.btn}>
+                <Text style={styles.btnText}>CLOSE TAB</Text>
+            </View>
+        </TouchableOpacity>
+    
       <View style={styles.itemsList}>
         {this.props.items.map((item, index) => {
           return (
@@ -19,6 +26,7 @@ export default class MenuComponent extends Component {
             </View>
           );
         })}
+      </View>
       </View>
     );
   }
