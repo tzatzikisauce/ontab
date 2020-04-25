@@ -10,7 +10,7 @@ import { Table, TableWrapper, Row, Cell } from 'react-native-table-component';
 
 
 
-export default class LoginForm extends Component {
+export default class MenuTable extends Component {
     constructor(props) {
         super(props);
         this.state = {
