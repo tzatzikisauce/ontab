@@ -4,18 +4,19 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.title}>Home</Text>
-      </View>
       <View style={styles.menuContainer}>
+<<<<<<< HEAD
         
 
         <TouchableOpacity onPress={() => navigation.navigate('MenuNoButton')}>
+=======
+        <TouchableOpacity onPress={() => navigation.navigate('Menu')}>
+>>>>>>> ui2
           <View style={styles.btn}>
             <Text style={styles.btnText}>BAR MENU</Text>
           </View>
         </TouchableOpacity>
-        
+
         <TouchableOpacity
           onPress={() => navigation.navigate('AddSubscriptionView')}
         >
@@ -59,17 +60,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  title: {
-    color: '#FFF',
-    marginTop: 10,
-    width: 160,
-    textAlign: 'center',
-    fontSize: 30,
-  },
-
   btn: {
-    width: 200,
-    height: 30,
+    width: 500,
+    height: 50,
     backgroundColor: '#30304a',
     borderRadius: 2,
     color: 'white',
@@ -81,6 +74,7 @@ const styles = StyleSheet.create({
   btnText: {
     textAlign: 'center',
     color: '#fff',
+    fontSize: 20,
   },
 });
 
