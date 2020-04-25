@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
 
   btn: {
-    width: 300,
+    width: 500,
     height: 50,
 
     backgroundColor: '#30304a',
