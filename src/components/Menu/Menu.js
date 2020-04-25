@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import MenuTable from './MenuTable';
 
+
 export default class Menu extends Component {
     render() {
         return (

@@ -64,6 +64,10 @@ export default class Tab extends Component {
         this.props.navigation.navigate('Home');
     } 
 
+    addToTab = () => {
+      this.props.navigation.navigate('Menu');
+  } 
+
     render() {
         return (
             <KeyboardAvoidingView behavior="padding" style = { styles.container }>
@@ -90,6 +94,13 @@ export default class Tab extends Component {
                     </Table>
                   </View>
                 </View>
+                <View style={ styles.btnContainer }>
+                    <TouchableOpacity onPress={() => this.addToTab()}>
+                        <View style={styles.btn}>
+                            <Text style={styles.btnText}>ADD DRINK TO TAB</Text>
+                        </View>
+                    </TouchableOpacity>
+                  </View>
                 <View style={ styles.titleContainer2 }>
                       <Text style={styles.title}>Total: {this.state.priceSum}</Text>
                   </View>
@@ -134,7 +145,7 @@ const styles = StyleSheet.create({
     menuContainer: {
       // flexGrow: 1,
       width: '100%',
-      height: '55%',
+      minHeight: '40%',
     },
   
     title: {

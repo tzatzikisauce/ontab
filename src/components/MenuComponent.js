@@ -7,16 +7,6 @@ export default class MenuComponent extends Component {
     items: PropTypes.array.isRequired,
   };
 
-  makeLists() {
-      let names = [];
-      let prices = [];
-      this.props.items.map((item, index) => {
-        names.push(item.name);
-        prices.push(item.price);
-      })
-      Alert.alert(names.join("\n"));
-  }
-
   render() {
     return (
     <View>
