@@ -11,7 +11,8 @@ import AddItem from './src/screens/AddItem';
 import AddToMenu from './src/screens/AddToMenu';
 import List from './src/screens/List';
 import AddSubscriptionView from './src/components/Payment/AddSubscriptionView';
-import Customer from './src/components/Customers/Customers'
+import Customer from './src/components/Customers/Customers';
+import MenuNoButton from './src/components/Menu/MenuNoButton';
 
 const navigator = createStackNavigator(
   {
@@ -21,6 +22,7 @@ const navigator = createStackNavigator(
     Image: ImageScreen,
     Login: Login,
     Menu: Menu,
+    MenuNoButton: MenuNoButton,
     Customer: Customer,
     Tab: Tab,
     AddSubscriptionView: AddSubscriptionView,
