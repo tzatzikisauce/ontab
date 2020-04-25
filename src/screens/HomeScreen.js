@@ -48,15 +48,15 @@ const styles = StyleSheet.create({
   },
 
   menuContainer: {
-    flexGrow: 1,
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   btn: {
-    width: 500,
+    width: 300,
     height: 50,
+
     backgroundColor: '#30304a',
     borderRadius: 2,
     color: 'white',
