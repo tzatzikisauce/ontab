@@ -37,7 +37,17 @@ export default class MenuNoButtonTable extends Component {
             ["Manhattan", '$6'],
             ["Mimosa", '$7'],
             ["Gimlet", '$7.50'],
-          ]
+            ["Sazerac", '$8.50'],
+            ["Pimm's Cup", '$7'],
+            ["Paloma", '$8'],
+            ["Sidecar", '$6.50'],
+            ["Mint Julep", '$9.50'],
+            ["French 75", '$7.50'],
+            ["Martini", '$6.50'],
+            ["Daiquiri", '$7.50'],
+            ["Dark 'n Stormy", '$9.50'],  
+            ["Martinez", '$7.50'],       
+        ]
         }
       }
      

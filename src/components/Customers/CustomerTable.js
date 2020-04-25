@@ -30,7 +30,14 @@ class CustomerForm extends Component {
             ["Old McDonald", '$16.50',''],
             ["Leroy Jenkins", '$100.50',''],
             ["Danny Devito", '$5.50',''],
-            ["Betty White", '$64.50',''],
+            ["Kim Kardashian", '$164.50',''],
+            ["Nicolas Cage", '$24.50',''],
+            ["Cardi B", '$35.50',''],
+            ["Snoop Dogg", '$420',''],
+            ["Max Miles", '$17.50',''],
+            ["Zeke Miles", '$40.50',''],
+            ["Donald Trump", '$69',''],
+            ["Avatar Aang", '$4',''],
           ]
         }
       }
