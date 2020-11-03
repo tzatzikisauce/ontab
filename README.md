@@ -1,3 +1,7 @@
+# Introduction
+OnTab is an application looking to upgrade the bar payment processes. It is currently slow and frusterating to order a drink on a busy night as a customer, as well as keep track of orders and close tabs as a bartender. Our application helps take the industry into the 21st century by allowing customers to make orders, keep check on their tabs, and close their tabs right through their smart phone. Bartenders can also quickly take orders, update specials, close tabs, view customer orders, and many more. 
+
+# How to run our application
 Android Studio Simulator
 
 Install Android Studio: https://developer.android.com/studio
